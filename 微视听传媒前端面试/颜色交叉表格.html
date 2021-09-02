@@ -1,0 +1,80 @@
+<!-- 实现的要求形成颜色交叉的表格 , 可以使用 nth-child(odd/even)来进行操作-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        ul , li {
+            list-style: none;
+        }
+        /* ul{
+            width:15rem;
+            height:15rem;
+        } */
+        /* 如果子DOM元素使用的浮动,父元素就算是设置了宽高,最好也还是清除一下浮动 */
+        /* ul::after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+        li{
+            float:left;
+            width:3rem;
+            height:3rem;
+        } */
+        ul{
+            width:15rem;
+            height:15rem;
+            display:flex;
+            /* 促使子DOM元素自动换行 */
+            flex-wrap: wrap;
+        }
+        li{
+            width:3rem;
+            height:3rem;
+        }
+        li:nth-child(odd){
+            background-color:#CCC;
+        }
+        li:nth-child(even){
+            background-color:#FFF;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

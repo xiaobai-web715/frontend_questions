@@ -1,0 +1,40 @@
+<!-- 所考察的知识点,弹性盒模型型里面的flex-direction方法,column垂直顺序排列,columns-reverse垂直逆向排列 , row水平顺序排列 ,row-reverse水平逆向排列 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            width:100%;
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+        .wrap1{
+            width:100%;
+            height:33%;
+            background-color:green;
+        }
+        .wrap2{
+            width:100%;
+            height:33%;
+            background-color:yellow;
+        }
+        .wrap3{
+            width:100%;
+            height:33%;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class='demo'>
+        <div class='wrap1'></div>
+        <div class='wrap2'></div>
+        <div class='wrap3'></div>
+    </div>
+</body>
+</html>
