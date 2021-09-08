@@ -26,7 +26,7 @@
 //             if(obj[key].length > 0){
 //                 obj2[key] = obj[key]
 //             }
-//         }else if(obj[key]){
+//         }else if(obj[key] || obj[key] === 0){
 //             obj2[key] = obj[key]
 //         }
 //     }

@@ -1,0 +1,27 @@
+<!-- 涉及到的知识clip:rect(top , right , bottom , left);这个css属性是用来裁剪图片的 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            /* 如果想要使用clip这个css属性的,绝对定位是一定要写的 */
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50% , -50%);
+            width:600px;
+            height:400px;
+            clip:rect(0px , 590px , 400px , 20px)
+            /* 按顺时针顺序编写上右下左四个值,上和左直接写裁剪的值就ok,右和下要写裁剪之后的值 */
+            /* 就比如这里590px与600px的差是10px也就是我右侧要裁剪10px,400px与400px相差0也就是我底部裁剪0px */
+        }
+    </style>
+</head>
+<body>
+    <img src = './image/84.jpg'/>
+</body>
+</html>
